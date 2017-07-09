@@ -56,31 +56,31 @@ class Graph{
         }
     }
 
-    public ArrayList<Integer> findPath(int start) {
+    public void findPath(int start, ArrayList<Integer> parents ) {
         ArrayList<Integer> path = new ArrayList<Integer>();
         if (start==numberNodes-1){
-            path.add(start);
-            return path;
+            parents.add(start);
         } else {
-            ArrayList<Integer> returnedPath = null;
             for (int i = 0; i < numberNodes; i++) {
                 int lFlow = nodes[start].costs[i];
-                if (lFlow > 0) {
-                    returnedPath = findPath(i);
-
-                    if(returnedPath.size()>0 && !returnedPath.contains(start)){
-                        path.add(start);
-                        path.addAll(returnedPath);
-                        return path;
+                if (lFlow > 0 && !parents.contains(i)) {
+                    parents.add(start);
+                    int sizeBefore = parents.size();
+                    findPath(i,parents);
+                    if(sizeBefore==parents.size()){
+                        parents.remove(parents.size()-1);
                     }
                 }
             }
-            return path;
         }
     }
 
     public Integer getFlow(Integer source, Integer target) {
         return nodes[source].costs[target];
+    }
+
+    public void addFlow(Integer source, Integer target, Integer minFlow) {
+        nodes[source].costs[target]= nodes[source].costs[target] + minFlow;
     }
 }
 
@@ -117,14 +117,26 @@ public class Main {
             grafo.setNode(i,node);
             residualGraph.setNode(i,residualNode);
         }
-        grafo.print();
-        ArrayList<Integer> path = residualGraph.findPath(0);
-        Integer minFlow = residualGraph.getFlow(path.get(0),path.get(1));
-        for (int i = 1; i<path.size()-1;i++){
-            minFlow=Math.min(minFlow,residualGraph.getFlow(path.get(i),path.get(i+1)));
+        residualGraph.print();
+        ArrayList<Integer> path = new ArrayList<Integer>();
+        residualGraph.findPath(0, path);
+
+        while (path.size()>0) {
+            Integer minFlow = residualGraph.getFlow(path.get(0), path.get(1));
+            for (int i = 1; i < path.size() - 1; i++) {
+                minFlow = Math.min(minFlow, residualGraph.getFlow(path.get(i), path.get(i + 1)));
+            }
+            System.out.println("path:" +path + "  " + minFlow);
+
+            for (int i = 0; i < path.size() - 1; i++) {
+                residualGraph.addFlow(path.get(i), path.get(i+1),-minFlow);
+                residualGraph.addFlow(path.get(i+1), path.get(i),minFlow);
+            }
+
+            residualGraph.print();
+            path.clear();
+            residualGraph.findPath(0, path);
+
         }
-
-        System.out.println(path + "  "+ minFlow);
-
     }
 }

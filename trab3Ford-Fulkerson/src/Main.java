@@ -6,25 +6,36 @@ import java.util.Scanner;
 class Node{
 
     int numberNeighbors;
-    int[] costs;
+    int[] flows;
+    int[] capacities;
 
     Node(int neighbors){
         this.numberNeighbors = neighbors;
-        costs = new int[neighbors];
+        flows = new int[neighbors];
+        capacities = new int[neighbors];
     }
-    void setNeighborsCost(int index, int cost){
-        costs[index]=cost;
+    void setNeighborFlow(int index, int flow){
+        flows[index]=flow;
+        capacities[index]=flow;
     }
 
     @Override
     public String toString() {
         String string = new String("");
         for (int i = 0; i<numberNeighbors;i++){
-            if (costs[i]>9) {
-                string = string.concat(costs[i] + " ");
-            } else{
-                string = string.concat(" " +costs[i] + " ");
+            String auxFlow = new String("");
+            String auxCap = new String("");
+            if (flows[i]>9) {
+                auxFlow= "" + flows[i];
+            } else {
+                auxFlow = " "+flows[i];
             }
+            if ( capacities[i] > 9 ){
+                auxCap = "" + capacities[i];
+            } else {
+                auxCap = capacities[i]+" ";
+            }
+            string = string.concat(auxFlow + " ");
         }
         return string;
     }
@@ -62,7 +73,7 @@ class Graph{
             parents.add(start);
         } else {
             for (int i = 0; i < numberNodes; i++) {
-                int lFlow = nodes[start].costs[i];
+                int lFlow = nodes[start].flows[i];
                 if (lFlow > 0 && !parents.contains(i)) {
                     parents.add(start);
                     int sizeBefore = parents.size();
@@ -76,11 +87,11 @@ class Graph{
     }
 
     public Integer getFlow(Integer source, Integer target) {
-        return nodes[source].costs[target];
+        return nodes[source].flows[target];
     }
 
     public void addFlow(Integer source, Integer target, Integer minFlow) {
-        nodes[source].costs[target]= nodes[source].costs[target] + minFlow;
+        nodes[source].flows[target]= nodes[source].flows[target] + minFlow;
     }
 }
 
@@ -103,30 +114,27 @@ public class Main {
         int numberNodes = in.nextInt();
         System.out.println(numberNodes);
 
-        Graph grafo  = new Graph(numberNodes);
         Graph residualGraph = new Graph(numberNodes);
 
         for (int i = 0; i<numberNodes;i++){
-            Node node = new Node(numberNodes);
             Node residualNode = new Node(numberNodes);
             for (int j = 0; j<numberNodes;j++){
                 int cost = in.nextInt();
-                node.setNeighborsCost(j,cost);
-                residualNode.setNeighborsCost(j,cost);
+                residualNode.setNeighborFlow(j,cost);
             }
-            grafo.setNode(i,node);
             residualGraph.setNode(i,residualNode);
         }
         residualGraph.print();
         ArrayList<Integer> path = new ArrayList<Integer>();
         residualGraph.findPath(0, path);
-
+        int totalFlow = 0;
         while (path.size()>0) {
             Integer minFlow = residualGraph.getFlow(path.get(0), path.get(1));
             for (int i = 1; i < path.size() - 1; i++) {
                 minFlow = Math.min(minFlow, residualGraph.getFlow(path.get(i), path.get(i + 1)));
             }
-            System.out.println("path:" +path + "  " + minFlow);
+            totalFlow+=minFlow;
+            System.out.println("path:" + path + "  " + minFlow);
 
             for (int i = 0; i < path.size() - 1; i++) {
                 residualGraph.addFlow(path.get(i), path.get(i+1),-minFlow);
@@ -136,7 +144,8 @@ public class Main {
             residualGraph.print();
             path.clear();
             residualGraph.findPath(0, path);
-
         }
+
+        System.out.println("Max Flow = " + totalFlow);
     }
 }

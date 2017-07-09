@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class Node{
@@ -29,6 +30,12 @@ class Node{
     }
 }
 
+/** first index is always the source
+* * last index is always the sink
+* *
+* *
+* *
+* */
 class Graph{
 
     int numberNodes;
@@ -47,6 +54,33 @@ class Graph{
         for (int i = 0; i<numberNodes;i++){
             System.out.println(nodes[i]);
         }
+    }
+
+    public ArrayList<Integer> findPath(int start) {
+        ArrayList<Integer> path = new ArrayList<Integer>();
+        if (start==numberNodes-1){
+            path.add(start);
+            return path;
+        } else {
+            ArrayList<Integer> returnedPath = null;
+            for (int i = 0; i < numberNodes; i++) {
+                int lFlow = nodes[start].costs[i];
+                if (lFlow > 0) {
+                    returnedPath = findPath(i);
+
+                    if(returnedPath.size()>0 && !returnedPath.contains(start)){
+                        path.add(start);
+                        path.addAll(returnedPath);
+                        return path;
+                    }
+                }
+            }
+            return path;
+        }
+    }
+
+    public Integer getFlow(Integer source, Integer target) {
+        return nodes[source].costs[target];
     }
 }
 
@@ -83,11 +117,14 @@ public class Main {
             grafo.setNode(i,node);
             residualGraph.setNode(i,residualNode);
         }
-
-
-
-        residualGraph.print();
         grafo.print();
+        ArrayList<Integer> path = residualGraph.findPath(0);
+        Integer minFlow = residualGraph.getFlow(path.get(0),path.get(1));
+        for (int i = 1; i<path.size()-1;i++){
+            minFlow=Math.min(minFlow,residualGraph.getFlow(path.get(i),path.get(i+1)));
+        }
+
+        System.out.println(path + "  "+ minFlow);
 
     }
 }

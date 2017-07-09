@@ -69,16 +69,24 @@ public class Main {
         int numberNodes = in.nextInt();
         System.out.println(numberNodes);
 
-        Graph grafo = new Graph(numberNodes);
+        Graph grafo  = new Graph(numberNodes);
+        Graph residualGraph = new Graph(numberNodes);
 
         for (int i = 0; i<numberNodes;i++){
             Node node = new Node(numberNodes);
+            Node residualNode = new Node(numberNodes);
             for (int j = 0; j<numberNodes;j++){
-                node.setNeighborsCost(j,in.nextInt());
+                int cost = in.nextInt();
+                node.setNeighborsCost(j,cost);
+                residualNode.setNeighborsCost(j,cost);
             }
             grafo.setNode(i,node);
+            residualGraph.setNode(i,residualNode);
         }
 
+
+
+        residualGraph.print();
         grafo.print();
 
     }

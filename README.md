@@ -10,7 +10,7 @@ Idea IDE - https://www.jetbrains.com/idea/download/
 
 JDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-execução java XX.jar <arquivo com matrix> ou colocar argumento com o nome do arquivo nos argumentos de quando executar pela IDE
+execução java -jar trab3Ford-Fulkerson.jar <arquivo com matrix> ou colocar argumento com o nome do arquivo nos argumentos de quando executar pela IDE
 
 ### Trabalho 5
 ### Trabalho 7

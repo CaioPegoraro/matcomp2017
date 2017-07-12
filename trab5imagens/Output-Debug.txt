@@ -1,0 +1,74 @@
+﻿'trab5imagens.exe' (Win32): Loaded 'C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab5imagens\x64\Debug\trab5imagens.exe'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\ntdll.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\kernel32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\KernelBase.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\OpenCV-3.1.0\build\x64\vc14\bin\opencv_world320d.dll'. Cannot find or open the PDB file.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\user32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\gdi32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\lpk.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\usp10.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\msvcrt.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\ole32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\rpcrt4.dll'. Cannot find or open the PDB file.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\oleaut32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\comdlg32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\shlwapi.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\winsxs\amd64_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.18837_none_a4d981ff711297b6\comctl32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\advapi32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\sechost.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\shell32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\msvfw32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\winmm.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\avifil32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\msacm32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\avicap32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\version.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\msvcp140d.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140d.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbased.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-timezone-l1-1-0.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-file-l2-1-0.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-localization-l1-2-0.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-synch-l1-2-0.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-processthreads-l1-1-1.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\api-ms-win-core-file-l1-2-0.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\concrt140d.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\imm32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\msctf.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\nvinitx.dll'. Cannot find or open the PDB file.
+'trab5imagens.exe' (Win32): Loaded 'C:\Program Files\NVIDIA Corporation\coprocmanager\_etoured.dll'. Cannot find or open the PDB file.
+'trab5imagens.exe' (Win32): Loaded 'C:\Program Files\NVIDIA Corporation\coprocmanager\Nvd3d9wrapx.dll'. Cannot find or open the PDB file.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\setupapi.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\cfgmgr32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\devobj.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Program Files\NVIDIA Corporation\coprocmanager\nvdxgiwrapx.dll'. Cannot find or open the PDB file.
+
+***** VIDEOINPUT LIBRARY - 0.1995 - TFW07 *****
+
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\apphelp.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\OpenCL.dll'. Module was built without symbols.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\nvcuda.dll'. Module was built without symbols.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\dwmapi.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Unloaded 'C:\Windows\System32\dwmapi.dll'
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\nvapi64.dll'. Cannot find or open the PDB file.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\wintrust.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\crypt32.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\msasn1.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\uxtheme.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\dwmapi.dll'. Symbols loaded.
+'trab5imagens.exe' (Win32): Loaded 'C:\Windows\System32\cryptbase.dll'. Cannot find or open the PDB file.
+The thread 0x255c has exited with code 0 (0x0).
+The thread 0x918 has exited with code 0 (0x0).
+The thread 0x1768 has exited with code 0 (0x0).
+The thread 0x1c98 has exited with code 0 (0x0).
+The thread 0x2684 has exited with code 0 (0x0).
+The thread 0x99c has exited with code 0 (0x0).
+The thread 0x2604 has exited with code 0 (0x0).
+The thread 0x21f8 has exited with code 0 (0x0).
+The thread 0x2ea0 has exited with code 0 (0x0).
+The thread 0x2074 has exited with code 0 (0x0).
+The thread 0x146c has exited with code 0 (0x0).
+The thread 0x2414 has exited with code 0 (0x0).
+The thread 0x1bd0 has exited with code 0 (0x0).
+The thread 0x1d00 has exited with code 0 (0x0).
+The program '[8636] trab5imagens.exe' has exited with code 0 (0x0).

@@ -23,3 +23,6 @@ Linguagem Python:
 Phyton 3 + numby - https://www.continuum.io/downloads
 
 Pycharm IDE - https://www.jetbrains.com/pycharm/download/
+
+Execução python main.py <arquivo com dados>
+ex python main.py \dados_multivariados\8-wine\wine.data

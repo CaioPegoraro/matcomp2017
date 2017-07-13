@@ -12,7 +12,9 @@ Idea IDE - https://www.jetbrains.com/idea/download/
 
 JDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-execução java -jar trab3Ford-Fulkerson.jar <arquivo com matrix> ou colocar argumento com o nome do arquivo nos argumentos de quando executar pela IDE
+Execução java -jar trab3Ford-Fulkerson.jar \<arquivo com matrix\> , ou colocar argumento com o nome do arquivo nos argumentos de quando executar pela IDE
+
+Exemplo java -jar trab3Ford-Fulkerson.jar matrix.txt
 
 ### Trabalho 5
 Implementação de filtros de imagem usando OpenCV (C++)
@@ -24,5 +26,6 @@ Phyton 3 + numby - https://www.continuum.io/downloads
 
 Pycharm IDE - https://www.jetbrains.com/pycharm/download/
 
-Execução python main.py <arquivo com dados>
-ex python main.py \dados_multivariados\8-wine\wine.data
+Execução python main.py \<arquivo com dados\>
+
+Exemplo python main.py \dados_multivariados\8-wine\wine.data

@@ -47,5 +47,5 @@ PCA = eigenVectors[:, [index1, index2]]
 PCAt = PCA.transpose()
 # 6) Projetar dados: ⃗y=W PCA T x⃗i (autovetores nas linhas de W TPCA e ⃗ xi vetor coluna)
 y = np.dot(PCAt, data.transpose())
-plt.plot(y, 'ro')
+plt.plot(y.transpose(), 'ro')
 plt.show()

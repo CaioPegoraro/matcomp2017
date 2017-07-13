@@ -37,6 +37,7 @@ for eigVal in eigenValues:
 PCA = eigenVectors[:, [index1,index2]]
 PCAt = PCA.transpose()
 y = np.dot(PCAt, data.transpose())
+plt.plot(y, 'ro')
+plt.show()
 
-print(y)
 

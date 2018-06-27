@@ -10,3 +10,12 @@ c:\users\caio\documents\visual studio 2015\Projects\trab1Simplex\trab1Simplex\ob
 C:\Users\Caio\Caio\UFSCar\Matemática computacional\trab1Simplex\trab1Simplex\bin\Debug\trab1Simplex.exe.config
 C:\Users\Caio\Caio\UFSCar\Matemática computacional\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.exe
 C:\Users\Caio\Caio\UFSCar\Matemática computacional\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.pdb
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\bin\Debug\trab1Simplex.exe.config
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.exe
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.pdb
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\bin\Debug\trab1Simplex.exe
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\bin\Debug\trab1Simplex.pdb
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.csprojResolveAssemblyReference.cache
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.Form1.resources
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.Properties.Resources.resources
+C:\Users\Caio\Caio\UFSCar\Matemática computacional\Trabalhos\trunk\trab1Simplex\trab1Simplex\obj\Debug\trab1Simplex.csproj.GenerateResource.Cache

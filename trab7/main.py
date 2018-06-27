@@ -17,12 +17,12 @@ data = np.delete(data, 0, 1)
 mean = data.mean(axis=0, keepdims=True);
 print(mean)
 # scale data
-# 1) Centralizar dados: ⃗ xi=⃗ xi –μ⃗x
+# 1) Centralizar dados:
 scaledData = data - mean
 print(scaledData.mean(axis=0))
-# 2) Computar a matriz de covariâncias: Σx= 1/n ∑(x⃗i−μ⃗x)( ⃗ xi−μ⃗x)T
+# 2) Computar a matriz de covari
 covMatrix = np.cov(scaledData, rowvar=False)
-# 3) Obter autovalores e autovetores de Σx
+# 3) Obter autovalores e autovetores de
 eigenValues, eigenVectors = LA.eig(covMatrix)
 index1 = 0;
 index2 = 0;
@@ -42,10 +42,10 @@ for eigVal in eigenValues:
         index2 = i
     i = i + 1
 
-# 5) Definir W PCA=[w⃗1, w⃗2,…,w⃗d]
+# 5) Definir W PCA=
 PCA = eigenVectors[:, [index1, index2]]
 PCAt = PCA.transpose()
-# 6) Projetar dados: ⃗y=W PCA T x⃗i (autovetores nas linhas de W TPCA e ⃗ xi vetor coluna)
+# 6) Projetar dados:  (autovetores nas linhas de W TPCA evetor coluna)
 y = np.dot(PCAt, data.transpose())
 plt.plot(y.transpose(), 'ro')
 plt.show()
